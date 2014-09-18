@@ -1,7 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
+## Result of "makeCacheMatrix" <- list of 4 functions, to call each one use - "%makeCacheMatrix object name%"$"%function name%" 
+## "set" <- assigns the given value of matrix to the free variable x and set cached meaning of solve to NULL
+## "get" <- returns the current matrix 
+## "setsolve" <- calculate the solve value for current matrix
+## "getsolve" <- returns the value of solve for current matrix (NULL if not yet calculated)
 
 makeCacheMatrix <- function(x = matrix()) {
         s <- NULL
@@ -15,7 +16,8 @@ makeCacheMatrix <- function(x = matrix()) {
         list(set = set, get = get, setsolve = setsolve, getsolve = getsolve)
 }
 
-## Write a short comment describing this function
+## Function "cacheSolve" return a matrix that is the inverse of 'x' 
+## Works in two steps - if there is no cached value, it calculates and sets to the given makeCacheMatrix object
 
 cacheSolve <- function(x) {
         ## Return a matrix that is the inverse of 'x'

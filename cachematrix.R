@@ -1,7 +1,7 @@
 ## Result of "makeCacheMatrix" <- list of 4 functions, to call each one use - "%makeCacheMatrix object name%"$"%function name%" 
-## "set" <- assigns the given value of matrix to the free variable x and set cached meaning of solve to NULL
+## "set" <- assigns the given value of matrix to the variable x and set cached meaning of solve to NULL
 ## "get" <- returns the current matrix 
-## "setsolve" <- calculate the solve value for current matrix
+## "setsolve" <- calculates the solve value for current matrix
 ## "getsolve" <- returns the value of solve for current matrix (NULL if not yet calculated)
 
 makeCacheMatrix <- function(x = matrix()) {
